@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+  <div class="container-md">
+	  <!-- 로고 이미지 -->
+	  <img src = "./image/logo.jpg" style = "display: block; margin-left:auto; margin-right:auto; width:300px; height:300px;">
+	  <br>
+	  <!-- 아이디 패스워드 -->
+	   <div> 	  
+		  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ID">
+			<br>
+		  <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" placeholder="Password">
+		</div>
+		
+		<!-- 자동로그인 스위치 -->
+		<div class="form-check form-switch">
+		  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+		  <label class="form-check-label" for="flexSwitchCheckChecked">Auto login</label>
+		</div>
+		
+		<!-- login버튼 -->
+		<div class="d-grid gap-2">
+		<button type="button" class="btn btn-secondary btn-lg" >login</button>
+		<a class="link-offset-2 link-underline link-underline-opacity-100" href="#" style="text-align:center;">Find Id/Password</a>	
+		</div>	
+		
+		<hr>
+		
+		
+<!-- 		<div class="d-grid gap-4">
+		
+			네이버
+			<button type="button" class="btn btn-bd-primary btn-lg" style = "--bs-btn-bg:#2DB400; --bs-btn-color:white;" onclick = "location.href='https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/'">Naver</button>
+			
+			카카오
+			<button type="button" class="btn btn-bd-primary btn-lg" style = "--bs-btn-bg:yellow; --bs-btn-color:black;" onclick = "location.href='https://accounts.kakao.com/login/?continue=https%3A%2F%2Fcs.kakao.com%2Fhelps%3Fservice%3D52%26category%3D166%26locale%3Dko#login'">Kakao</button>
+			구글(빨간색)
+			
+			<button type="button" class="btn btn-bd-primary btn-lg" style = "--bs-btn-bg:#EA4335; --bs-btn-color:white;" onclick = "location.href='https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=774138225602-94btlff2439tl4hbtuo24k23vd50r5h4.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fapi.onstove.com%2Fsim%2Foauth%2Fcallback&nonce=73ddb965-99ef-4228-a5f3-88bf9bae1468&display=popup&response_type=code&scope=openid%20email&state=302c08969560fc6fe135bda2849c7bd8&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow'">Google</button>
+			페이스북(파란색)
+			
+			<button type="button" class="btn btn-bd-primary btn-lg" style = "--bs-btn-bg:#3b5998; --bs-btn-color:white;" onclick = "location.href='https://www.facebook.com/login.php?skip_api_login=1&api_key=1770035916542597&kid_directed_site=0&app_id=1770035916542597&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.2%2Fdialog%2Foauth%3Fclient_id%3D1770035916542597%26redirect_uri%3Dhttps%253A%252F%252Fapi.onstove.com%252Fsim%252Foauth%252Fcallback%26display%3Dpopup%26state%3Dd480b9598c501313d16488f69d00673c%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Db7b4d3cd-70ae-4485-89b1-283e2e3ad26e%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fapi.onstove.com%2Fsim%2Foauth%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Dd480b9598c501313d16488f69d00673c%23_%3D_&display=popup&locale=ko_KR&pl_dbl=0'">Facebook</button>
+		</div> -->
+		
+		
+		
+		<hr>
+		
+		  <div class="row gy-4">
+		  		<!-- 네이버 -->
+		  		<div class="d-grid col-12">
+		  			<button type="button" class="btn btn-bd-primary btn-lg" style = "--bs-btn-bg:#2DB400; --bs-btn-color:white;" onclick = "location.href='https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/'">Naver</button>
+				</div>
+				<!-- 카카오 -->
+				<div class="d-grid col-12">
+					<button type="button" class="btn btn-bd-primary btn-lg" style = "--bs-btn-bg:yellow; --bs-btn-color:black;" onclick = "location.href='https://accounts.kakao.com/login/?continue=https%3A%2F%2Fcs.kakao.com%2Fhelps%3Fservice%3D52%26category%3D166%26locale%3Dko#login'">Kakao</button>
+			
+				</div>
+				<!-- 구글 -->
+				<div class="d-grid col-12">
+					<button type="button" class="btn btn-bd-primary btn-lg" style = "--bs-btn-bg:#EA4335; --bs-btn-color:white;" onclick = "location.href='https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?client_id=774138225602-94btlff2439tl4hbtuo24k23vd50r5h4.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fapi.onstove.com%2Fsim%2Foauth%2Fcallback&nonce=73ddb965-99ef-4228-a5f3-88bf9bae1468&display=popup&response_type=code&scope=openid%20email&state=302c08969560fc6fe135bda2849c7bd8&service=lso&o2v=2&theme=glif&flowName=GeneralOAuthFlow'">Google</button>
+				</div>
+				<!-- 페이스북 -->
+				<div class="d-grid col-12">
+					<button type="button" class="btn btn-bd-primary btn-lg" style = "--bs-btn-bg:#3b5998; --bs-btn-color:white;" onclick = "location.href='https://www.facebook.com/login.php?skip_api_login=1&api_key=1770035916542597&kid_directed_site=0&app_id=1770035916542597&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.2%2Fdialog%2Foauth%3Fclient_id%3D1770035916542597%26redirect_uri%3Dhttps%253A%252F%252Fapi.onstove.com%252Fsim%252Foauth%252Fcallback%26display%3Dpopup%26state%3Dd480b9598c501313d16488f69d00673c%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Db7b4d3cd-70ae-4485-89b1-283e2e3ad26e%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fapi.onstove.com%2Fsim%2Foauth%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3Dd480b9598c501313d16488f69d00673c%23_%3D_&display=popup&locale=ko_KR&pl_dbl=0'">Facebook</button>
+				</div>
+		  	</div>
+		  		
+		 </div>
+		  
+		  
+		      
+		    
+		    
+		
+
+	</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
