@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<script src="https://kit.fontawesome.com/9a26dd7f83.js" crossorigin="anonymous"></script>
+</head>
+  <body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="./image/LostArk.png" alt="LoaLogo" width="150" height="50">
+				</a>
+			  <a class="navbar-brand" href="#">Admin</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Home</a>
+				  </li>
+				  
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Dropdown
+					</a>
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="#">공지사항</a></li>
+					  <li><a class="dropdown-item" href="#">회원관리</a></li>
+					  <li><hr class="dropdown-divider"></li>
+					  
+					</ul>
+				  </li>
+				</ul>
+				<form class="d-flex" role="search">
+				  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				  <button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+				<a href="#">
+					<img src ="./image/icon_etc.png" alt = "iconEtc" width="30" height="30">
+				</a>
+				<a href="#">
+					<img src ="./image/icon_man.png" alt = "iconMan" width="30" height="30">
+				</a>
+			  </div>
+			  
+			</div>
+			
+		  </nav>
+	</header>
+    <div class="row g-0 border border-1">
+		<div class="col-6 col-md-2  border border-1" >
+			
+			<div class="d-grid gap-2 col-6">
+				
+				<i class="fa-regular fa-clock"><button class="btn" type="button" style = "text-align: left;">Home</button></i>
+				<i class="fa-regular fa-bell"><button class="btn" type="button" style = "text-align: left;">공지사항</button></i>
+				<i class="fa-solid fa-user-group"><button class="btn" type="button" style = "text-align: left;">회원관리</button></i>
+				<i class="fa-solid fa-user-group"><button class="btn" type="button" style = "text-align: left;">스폰서관리</button></i>
+				<i class="bi bi-grid"><button class="btn" type="button" style = "text-align: left;">광고관리</button></i>
+				<i class="bi bi-display"><button class="btn" type="button" style = "text-align: left;">서비스관리</button></i>
+				<i class="fa-regular fa-message"><button class="btn" type="button" style = "text-align: left;">커뮤니케이션</button></i>
+				<i class="fa-solid fa-gear"><button class="btn" type="button" style = "text-align: left;">시스템관리</button></i>
+				<i class="bi bi-person"><button class="btn" type="button" style = "text-align: left;">개인정보관리</button></i>
+				<i class="bi bi-person"><button class="btn" type="button" style = "text-align: left;">test</button></i>
+				<i class="bi bi-person"><button class="btn" type="button" style = "text-align: left;">gps</button></i>
+
+
+				
+			</div>
+				
+		</div>
+		
+		<div class="col-6 col-md-10  border border-1" >
+			<div class="container" >
+			<!-- 브레브크럼을 사용하여 현재 페이지 -->
+			<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item active " aria-current="page"><a href="#" class="link-underline link-underline-opacity-0">Page 1</a></li>
+					<li class="breadcrumb-item active" aria-current="page"><a href="#" class="link-underline link-underline-opacity-0">Page 2</a></li>
+				  <li class="breadcrumb-item">회원관리</li>
+				</ol>
+			  </nav>
+			
+			<h2>Member</h2>
+			
+				<div class = "row ">
+					<div class = "d-grid col">
+						<select class="form-select" aria-label="Default select example">
+							<option selected>N</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+					<div class = "d-grid col"> 
+						<select class="form-select" aria-label="Default select example">
+							<option selected>수정일</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+					<div class = "d-grid col">
+						<input class="form-control" type="date" value = "2024-01-07">
+					</div>
+
+					<div class = "d-grid col">
+						<input class="form-control" type="date" value = "2024-02-06">
+					</div>
+				</div>
+				<div class = "row ">
+					<div class = "d-grid col-4">
+						<select class="form-select" aria-label="Default select example">
+							<option selected>검색구분</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+
+					<div class = "d-grid col-4">
+						<form class="d-flex" role="search">
+							<input class="form-control me-2" type="search" placeholder="검색어" aria-label="Search">
+							<button class="btn" type="submit"><img src="./image/icon_find.png"></button>
+						</form>
+					</div>
+				</div>
+				</div>
+			
+			
+			<hr>
+			<div class = "row ">
+			<label class = "col-md-10">Total : 8927</label>
+			
+				<div class = "d-grid col-2 md-2">
+					<div>
+							<select class="form-select " aria-label="Default select example">
+							<option selected>10</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+							</select>
+					</div>
+				</div>				
+			</div>
+
+			<hr>
+			<!-- 목록 그룹-->
+			
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">
+					<p>8527	N	8944	조동구	user01		남자 		040212		user01@naver.com	010-2222-0212		조동구	하나은행	111-1111-111111		벤츠	333가0212	전기차	2022 검정	서울시 서초구	2023-06-11 13:13:31		2023-08-04 05:50:10</p>
+				</label>
+				
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">
+					<p>8526	N	8943	홍길동	user01		남자 		040212		user01@naver.com	010-2222-0212		조동구	하나은행	111-1111-111111		벤츠	333가0212	전기차	2022 검정	서울시 서초구	2023-06-11 13:13:31		2023-08-04 05:50:10</p>
+				</label>
+				
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">
+					<p>8525	N	8942	김민주	user01		남자 		040212		user01@naver.com	010-2222-0212		조동구	하나은행	111-1111-111111		벤츠	333가0212	전기차	2022 검정	서울시 서초구	2023-06-11 13:13:31		2023-08-04 05:50:10</p>
+				</label>
+				
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">
+					<p>8524	N	8941	홍동구	user01		남자 		040212		user01@naver.com	010-2222-0212		조동구	하나은행	111-1111-111111		벤츠	333가0212	전기차	2022 검정	서울시 서초구	2023-06-11 13:13:31		2023-08-04 05:50:10</p>
+				</label>
+				
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">
+					<p>8523	N	8940	조길동	user01		남자 		040212		user01@naver.com	010-2222-0212		조동구	하나은행	111-1111-111111		벤츠	333가0212	전기차	2022 검정	서울시 서초구	2023-06-11 13:13:31		2023-08-04 05:50:10</p>
+				</label>
+				
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">
+					<p>8522	N	8939	조동길	user01		남자 		040212		user01@naver.com	010-2222-0212		조동구	하나은행	111-1111-111111		벤츠	333가0212	전기차	2022 검정	서울시 서초구	2023-06-11 13:13:31		2023-08-04 05:50:10</p>
+				</label>
+				
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">
+					<p>8521	N	8938	홍민주	user01		남자 		040212		user01@naver.com	010-2222-0212		조동구	하나은행	111-1111-111111		벤츠	333가0212	전기차	2022 검정	서울시 서초구	2023-06-11 13:13:31		2023-08-04 05:50:10</p>
+				</label>
+				
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">
+					<p>8520	N	8937	조구동	user01		남자 		040212		user01@naver.com	010-2222-0212		조동구	하나은행	111-1111-111111		벤츠	333가0212	전기차	2022 검정	서울시 서초구	2023-06-11 13:13:31		2023-08-04 05:50:10</p>
+				</label>
+				
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">
+					<p>8519	N	8936	홍동길	user01		남자 		040212		user01@naver.com	010-2222-0212		조동구	하나은행	111-1111-111111		벤츠	333가0212	전기차	2022 검정	서울시 서초구	2023-06-11 13:13:31		2023-08-04 05:50:10</p>
+				</label>
+				
+				<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+				<label class="form-check-label" for="flexCheckDefault">
+					<p>8518	N	8935	홍구조	user01		남자 		040212		user01@naver.com	010-2222-0212		조동구	하나은행	111-1111-111111		벤츠	333가0212	전기차	2022 검정	서울시 서초구	2023-06-11 13:13:31		2023-08-04 05:50:10</p>
+				</label>
+			
+			
+			
+			</div>
+
+
+			<!-- 페이지네이션 -->
+			<div class = "row">
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-center">
+					<li class="page-item disabled">
+						<a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">41</a></li>
+					<li class="page-item"><a class="page-link" href="#">42</a></li>
+					<li class="page-item"><a class="page-link" href="#">43</a></li>
+					<li class="page-item"><a class="page-link" href="#">44</a></li>
+					<li class="page-item"><a class="page-link" href="#">45</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a>
+					</li>
+				</ul>
+				</nav>
+			</div>
+
+			<!-- 삭제 추가 버튼-->
+			<div class = "row">
+				<div class = "col-sm-1">
+
+					<button class="btn btn-danger" type="button" style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .80rem;"><i class="far fa-trash-alt"></i></button>
+					
+				</div>
+				<div class = "col-sm-10">
+
+				</div>
+				<div class = "col-sm-1">
+
+					<button class="btn btn-primary" type="button" style="--bs-btn-padding-y: .5rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .80rem;"><i class="fas fa-plus"></i></button>
+				
+				</div>
+
+				
+				
+
+			</div>
+		</div>
+	</div>
+
+	
+
+	<footer>
+		<p>(주)LostArk | 대표 : 홍길동 | 사업자 등록 번호 111-11-11111 | 통신판매업신고 : 제000-경기-100호 | 개인정보 보호 책임자 : 홍길동</p>
+        <p>E-mail : user01@smilegate.com | 주소 : 경기도 판교시 스마일게이트 704호</p>
+        <p>ⓒ2024. LostArk All rights reserved.</p>
+	</footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
